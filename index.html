@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTSX Server</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #2c2c54);
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background: #ff9800;
+      border: none;
+      padding: 12px 24px;
+      margin: 10px;
+      border-radius: 12px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #e68900;
+    }
+
+    .youtube-icon {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: #ff0000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .youtube-icon:hover {
+      transform: scale(1.1);
+    }
+
+    .youtube-icon svg {
+      fill: white;
+      width: 28px;
+      height: 28px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>✨ Selamat Datang di GTSX ✨</h1>
+  <p>Server GTPS terbaik untuk kamu! 🎮</p>
+
+  <button class="btn" onclick="copyText('103.42.116.171 www.growtopia1.com')">Copy IP Growtopia1</button>
+  <button class="btn" onclick="copyText('103.42.116.171 www.growtopia2.com')">Copy IP Growtopia2</button>
+  <button class="btn" onclick="copyText('http://103.42.116.171:17091')">Copy VHOST</button>
+
+  <!-- YouTube Icon -->
+  <a href="https://youtube.com/@sxongtps?si=8XShIwZaG4LKEbpl" target="_blank" class="youtube-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M19.615 3.184c.394.149.705.451.854.846.287.765.287 2.367.287 4.97v2c0 2.604 0 4.206-.287 4.971a1.428 1.428 0 0 1-.854.845c-.766.288-2.368.288-4.971.288h-2c-2.603 0-4.205 0-4.971-.288a1.428 1.428 0 0 1-.845-.845c-.288-.765-.288-2.367-.288-4.971v-2c0-2.603 0-4.205.288-4.97.14-.395.451-.697.845-.846C7.41 2.896 9.012 2.896 11.615 2.896h2c2.603 0 4.205 0 4.971.288ZM10 8v8l6-4-6-4Z"/>
+    </svg>
+  </a>
+
+  <!-- Background Music -->
+  <audio autoplay loop hidden>
+    <source src="https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Kevin_Macleod/Calm/Kevin_Macleod_-_Calm.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert("✅ Berhasil copy: " + text);
+      });
+    }
+  </script>
+
+</body>
+</html>
